@@ -43,7 +43,7 @@
 function add1(){
   let  ename=document.querySelector("#ename").value;
   
-  let  eamil=document.querySelector("#email").value;
+  let  email=document.querySelector("#email").value;
   let  eid=document.querySelector("#eid").value;
   
   let  depit=document.querySelector("#deptno").value;
@@ -83,7 +83,7 @@ remove.addEventListener('click',()=>{
   let  eid=document.querySelector("#eid").value;
   
   let  depit=document.querySelector("#deptno").value;
-    let obj={ename,eamil,eid,depit};
+    let obj={ename,email,eid,depit};
     for(let x=0;x<emparray.length;x++){
             if(emparray[x].ename==ename1){
                 console.log("we got it ");
