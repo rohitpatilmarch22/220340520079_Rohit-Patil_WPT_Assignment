@@ -8,7 +8,7 @@
 </head>
 <script>
 
-    let emparray=[{ename:"rohit",eamil:"rohit@.com",eid:101,deptno:1},{ename:"bittu",eamil:"bittu@.com",eid:102,deptno:2},{ename:"cdad",eamil:"cdac@.com",eid:103,deptno:1},{ename:"mumbai",eamil:"mumbai@.com",eid:104,deptno:2}];
+    let emparray=[{ename:"rohit",email:"rohit@.com",eid:101,deptno:1},{ename:"bittu",email:"bittu@.com",eid:102,deptno:2},{ename:"cdad",email:"cdac@.com",eid:103,deptno:1},{ename:"mumbai",email:"mumbai@.com",eid:104,deptno:2}];
     let count=emparray.length;
    window.addEventListener('DOMContentLoaded', ()=>{
     const ename = document.querySelector("#ename");
@@ -43,7 +43,7 @@
 function add1(){
   let  ename=document.querySelector("#ename").value;
   
-  let  eamil=document.querySelector("#email").value;
+  let  email=document.querySelector("#email").value;
   let  eid=document.querySelector("#eid").value;
   
   let  depit=document.querySelector("#deptno").value;
@@ -58,11 +58,11 @@ let modify=document.getElementById("modify");
 modify.addEventListener('click',()=>{
     let  ename=document.querySelector("#ename").value;
   
-  let  eamil=document.querySelector("#email").value;
+  let  email=document.querySelector("#email").value;
   let  eid=document.querySelector("#eid").value;
   
   let  depit=document.querySelector("#deptno").value;
-    let obj={ename,eamil,eid,depit};
+    let obj={ename,email,eid,depit};
     for(let x=0;x<emparray.length;x++){
             if(emparray[x].ename==ename1){
                 console.log("we got it ");
@@ -79,7 +79,7 @@ let remove=document.getElementById("remove");
 remove.addEventListener('click',()=>{
     let  ename=document.querySelector("#ename").value;
   
-  let  eamil=document.querySelector("#email").value;
+  let  email=document.querySelector("#email").value;
   let  eid=document.querySelector("#eid").value;
   
   let  depit=document.querySelector("#deptno").value;
